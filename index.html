@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hawaii Trip 2026 🌺</title>
+  <meta name="description" content="Family Hawaii itinerary — Kauai & Oahu, April 3–11, 2026" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌺</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #3b6fd4;
+      --primary-dark: #2a52a8;
+      --primary-light: #dce8ff;
+      --teal: #0d9488;
+      --teal-light: #e6fffa;
+      --teal-border: #99f6e4;
+      --amber: #d97706;
+      --amber-light: #fffbeb;
+      --amber-border: #fcd34d;
+      --coral: #e85d30;
+      --coral-light: #fff1ee;
+      --purple: #7c3aed;
+      --purple-light: #f5f3ff;
+      --green: #15803d;
+      --green-light: #f0fdf4;
+      --green-border: #bbf7d0;
+      --pink: #be185d;
+      --pink-light: #fce7f3;
+      --pink-border: #fbcfe8;
+      --fg: #1e2a3a;
+      --fg-muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Page shell ── */
+    .shell {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+      border-radius: var(--radius);
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-md);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-wave {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 48px;
+    }
+    .hero-emoji { font-size: 3rem; display: block; margin-bottom: 0.5rem; position: relative; }
+    .hero h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; position: relative; }
+    .hero-sub { font-size: 0.9rem; opacity: 0.85; margin-top: 0.25rem; font-weight: 300; position: relative; }
+    .hero-tags {
+      display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 1.1rem; position: relative;
+    }
+    .hero-tag {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 0.25rem 0.85rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+    .hero-conf {
+      font-size: 0.68rem;
+      opacity: 0.55;
+      margin-top: 1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    /* ── Stats bar ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.75rem 0.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .stat-val { font-size: 1.1rem; font-weight: 700; color: var(--fg); }
+    .stat-label { font-size: 0.58rem; color: var(--fg-muted); margin-top: 0.15rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* ── Section header ── */
+    .section-header {
+      display: flex; align-items: center; gap: 0.5rem;
+      margin: 1.75rem 0 0.85rem;
+    }
+    .section-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .section-label {
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-muted);
+    }
+
+    /* ── Cards (hotel, car, flight) ── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 0.75rem;
+      box-shadow: var(--shadow);
+    }
+    .card-header {
+      padding: 1rem 1.25rem;
+      display: flex; align-items: center; gap: 0.85rem;
+    }
+    .card-icon {
+      width: 42px; height: 42px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .card-name { font-size: 0.92rem; font-weight: 600; color: var(--fg); }
+    .card-sub { font-size: 0.7rem; color: var(--fg-muted); margin-top: 0.1rem; }
+    .card-dates { font-size: 0.72rem; font-weight: 600; color: var(--primary); margin-top: 0.2rem; }
+    .card-details {
+      border-top: 1px solid var(--border);
+      padding: 0.75rem 1.25rem;
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+      background: #fafbfc;
+    }
+    .detail-label { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-muted); font-weight: 600; }
+    .detail-val { font-size: 0.82rem; font-weight: 500; color: var(--fg); margin-top: 0.15rem; }
+
+    /* ── Badges ── */
+    .badge {
+      display: inline-block; font-size: 0.6rem; font-weight: 700;
+      border-radius: 999px; padding: 0.15rem 0.55rem;
+      vertical-align: middle; margin-left: 0.35rem;
+    }
+    .badge-booked { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+    .badge-confirmed { background: var(--teal-light); color: var(--teal); border: 1px solid var(--teal-border); }
+    .badge-confirmed-amber { background: var(--amber-light); color: var(--amber); border: 1px solid var(--amber-border); }
+    .badge-kids { background: var(--pink-light); color: var(--pink); border: 1px solid var(--pink-border); }
+    .badge-price { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); }
+
+    /* ── Flight cards ── */
+    .flight-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem; box-shadow: var(--shadow);
+    }
+    .flight-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem; }
+    .flight-pill {
+      font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.7rem;
+      border-radius: 999px; letter-spacing: 0.02em;
+    }
+    .flight-pill-dl { background: var(--primary-light); color: var(--primary-dark); }
+    .flight-pill-wn { background: #fef9c3; color: #92400e; }
+    .flight-date { font-size: 0.7rem; color: var(--fg-muted); }
+    .flight-route { display: flex; align-items: center; }
+    .airport { text-align: center; }
+    .airport-code { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--fg); }
+    .airport-time { font-size: 0.82rem; font-weight: 500; color: var(--fg-muted); margin-top: 0.1rem; }
+    .airport-name { font-size: 0.62rem; color: var(--fg-muted); margin-top: 0.05rem; }
+    .flight-mid { flex: 1; padding: 0 0.85rem; }
+    .flight-track { position: relative; height: 1px; background: var(--border); }
+    .flight-track::after {
+      content: '✈'; position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px; background: var(--card); padding: 0 4px; color: var(--fg-muted);
+    }
+    .flight-dur { font-size: 0.63rem; color: var(--fg-muted); text-align: center; margin-top: 0.4rem; }
+    .layover {
+      display: flex; align-items: center; gap: 0.4rem;
+      background: var(--amber-light); color: var(--amber);
+      border: 1px solid var(--amber-border); border-radius: 999px;
+      padding: 0.35rem 0.9rem; font-size: 0.72rem; font-weight: 500;
+      margin: 0.5rem 0 0; justify-content: center;
+    }
+
+    /* ── Island banner ── */
+    .island-banner {
+      border-radius: var(--radius-sm);
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.75rem;
+      display: flex; align-items: center; gap: 0.65rem;
+    }
+    .island-name { font-size: 0.82rem; font-weight: 600; }
+    .island-detail { font-size: 0.7rem; opacity: 0.75; font-weight: 400; margin-left: 0.3rem; }
+
+    /* ── Day cards ── */
+    .day-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); margin-bottom: 0.65rem;
+      overflow: hidden; box-shadow: var(--shadow);
+    }
+    .day-header {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 0.8rem 1.25rem; background: #f8fafc;
+      cursor: pointer; user-select: none;
+      transition: background 0.15s;
+    }
+    .day-header:hover { background: #f1f5f9; }
+    .day-num {
+      width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.72rem; font-weight: 700; color: #fff; flex-shrink: 0;
+    }
+    .day-title { font-size: 0.9rem; font-weight: 600; color: var(--fg); }
+    .day-sub { font-size: 0.68rem; color: var(--fg-muted); margin-top: 0.1rem; }
+    .day-chevron {
+      font-size: 0.65rem; color: var(--fg-muted);
+      transition: transform 0.2s; margin-left: auto; flex-shrink: 0;
+    }
+    .day-chevron.open { transform: rotate(180deg); }
+    .day-body {
+      padding: 0.85rem 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Activities ── */
+    .activity { display: flex; gap: 0.75rem; padding: 0.5rem 0; }
+    .activity + .activity { border-top: 1px dashed var(--border); }
+    .act-icon { font-size: 1rem; flex-shrink: 0; width: 22px; text-align: center; padding-top: 2px; }
+    .act-title { font-weight: 500; font-size: 0.82rem; color: var(--fg); line-height: 1.35; }
+    .act-detail { color: var(--fg-muted); font-size: 0.72rem; margin-top: 0.2rem; line-height: 1.55; }
+
+    /* ── Timeline ── */
+    .tl-row { display: flex; gap: 0.75rem; }
+    .tl-time { width: 56px; flex-shrink: 0; text-align: right; padding-top: 3px; font-size: 0.67rem; font-weight: 600; color: var(--fg-muted); }
+    .tl-spine { display: flex; flex-direction: column; align-items: center; width: 14px; flex-shrink: 0; }
+    .tl-dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+    .tl-line { width: 2px; flex: 1; min-height: 20px; margin-top: 3px; }
+    .tl-content { flex: 1; padding-left: 0.5rem; }
+    .tl-title { font-size: 0.82rem; font-weight: 600; color: var(--fg); line-height: 1.3; }
+    .tl-detail { font-size: 0.72rem; color: var(--fg-muted); margin-top: 0.15rem; line-height: 1.5; }
+
+    /* ── Pack lists ── */
+    .pack-label { font-size: 0.63rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-muted); margin-top: 0.85rem; margin-bottom: 0.3rem; }
+    .pack-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 1rem; }
+    .pack-item { display: flex; align-items: flex-start; gap: 0.4rem; font-size: 0.71rem; color: var(--fg-muted); }
+    .pack-check { color: var(--teal); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── Dinner suggestion ── */
+    .dinner-box {
+      background: var(--amber-light); border: 1px solid var(--amber-border);
+      border-radius: var(--radius-sm); padding: 0.85rem 1rem; margin-top: 0.6rem;
+    }
+    .dinner-label { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--amber); margin-bottom: 0.35rem; }
+    .dinner-name { font-size: 0.9rem; font-weight: 600; color: var(--fg); }
+    .dinner-detail { font-size: 0.72rem; color: #78350f; margin-top: 0.2rem; line-height: 1.55; }
+
+    /* ── Tip cards ── */
+    .tip {
+      border-radius: var(--radius-sm); padding: 0.9rem 1.1rem;
+      margin-bottom: 0.65rem; border: 1px solid;
+    }
+    .tip-title { font-size: 0.78rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.3rem; }
+    .tip-text { font-size: 0.74rem; line-height: 1.6; }
+    .tip-teal { background: var(--teal-light); border-color: var(--teal-border); }
+    .tip-teal .tip-title { color: #0f766e; }
+    .tip-teal .tip-text { color: #134e4a; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center; padding: 2rem 1rem 1rem;
+      font-size: 0.7rem; color: var(--fg-muted);
+      border-top: 1px solid var(--border); margin-top: 2rem;
+    }
+    footer strong { color: var(--fg); }
+
+    /* ── Print ── */
+    @media print {
+      .day-body { display: block !important; }
+      .day-chevron { display: none; }
+      .day-header { cursor: default; background: #f8fafc !important; }
+      body { background: white; }
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 1.4rem; }
+      .airport-code { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- HERO -->
+  <div class="hero">
+    <svg class="hero-wave" viewBox="0 0 680 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 24 Q85 4 170 24 T340 24 T510 24 T680 24 V48 H0Z" fill="rgba(255,255,255,0.08)"/>
+      <path d="M0 32 Q85 12 170 32 T340 32 T510 32 T680 32 V48 H0Z" fill="rgba(255,255,255,0.05)"/>
+    </svg>
+    <span class="hero-emoji">🌺</span>
+    <h1>Hawaii Trip 2026</h1>
+    <p class="hero-sub">Salt Lake City → Kauai → Oahu → Salt Lake City</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Apr 3 – Apr 11</span>
+      <span class="hero-tag">8 Nights</span>
+      <span class="hero-tag">Kauai + Oahu</span>
+      <span class="hero-tag">Family of 4</span>
+    </div>
+    <div class="hero-conf">Delta Confirmation: GACOGS</div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="stat-val">8</div><div class="stat-label">Nights</div></div>
+    <div class="stat"><div class="stat-val">2</div><div class="stat-label">Islands</div></div>
+    <div class="stat"><div class="stat-val">LIH</div><div class="stat-label">First Stop</div></div>
+    <div class="stat"><div class="stat-val">HNL</div><div class="stat-label">Second Stop</div></div>
+  </div>
+
+  <!-- ACCOMMODATIONS -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--teal)"></div>
+    <span class="section-label">Accommodations</span>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon" style="background:var(--teal-light)">🌿</div>
+      <div style="flex:1">
+        <div class="card-name">Outrigger Plantation Hotel</div>
+        <div class="card-sub">Outrigger Hotels & Resorts · Kauai</div>
+        <div class="card-dates">Apr 3 – Apr 8 · 5 Nights</div>
+      </div>
+    </div>
+    <div class="card-details">
+      <div><div class="detail-label">Island</div><div class="detail-val">Kauai</div></div>
+      <div><div class="detail-label">Check-in</div><div class="detail-val">Fri, Apr 3</div></div>
+      <div><div class="detail-label">Check-out</div><div class="detail-val">Wed, Apr 8</div></div>
+      <div><div class="detail-label">Nights</div><div class="detail-val">5</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon" style="background:var(--amber-light)">🏄</div>
+      <div style="flex:1">
+        <div class="card-name">Outrigger Waikiki Paradise</div>
+        <div class="card-sub">Outrigger Hotels & Resorts · Oahu</div>
+        <div class="card-dates">Apr 8 – Apr 11 · 3 Nights</div>
+      </div>
+    </div>
+    <div class="card-details">
+      <div><div class="detail-label">Island</div><div class="detail-val">Oahu</div></div>
+      <div><div class="detail-label">Check-in</div><div class="detail-val">Wed, Apr 8</div></div>
+      <div><div class="detail-label">Check-out</div><div class="detail-val">Sat, Apr 11</div></div>
+      <div><div class="detail-label">Nights</div><div class="detail-val">3</div></div>
+    </div>
+  </div>
+
+  <!-- CAR RENTALS -->
+  <div class="section-header">
+    <div class="section-dot" style="background:#6366f1"></div>
+    <span class="section-label">Car Rentals</span>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon" style="background:#eff6ff">🚗</div>
+      <div style="flex:1">
+        <div class="card-name">Standard <span class="badge badge-booked">✓ Booked</span></div>
+        <div class="card-sub" style="color:#1d4ed8;font-weight:600">Thrifty Car Rental · Kauai</div>
+        <div class="card-sub" style="margin-top:0.15rem">Apr 3 at 3:00 PM – Apr 8 at 9:00 AM · Booked by Kelly</div>
+      </div>
+    </div>
+    <div class="card-details">
+      <div><div class="detail-label">Island</div><div class="detail-val">Kauai</div></div>
+      <div><div class="detail-label">Pick-up</div><div class="detail-val">Fri, Apr 3 · 3:00 PM</div></div>
+      <div><div class="detail-label">Drop-off</div><div class="detail-val">Wed, Apr 8 · 9:00 AM</div></div>
+      <div><div class="detail-label">Duration</div><div class="detail-val">5 days</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon" style="background:var(--green-light)">🚙</div>
+      <div style="flex:1">
+        <div class="card-name">Fullsize <span class="badge badge-booked">✓ Booked</span></div>
+        <div class="card-sub" style="color:#15803d;font-weight:600">Alamo · Oahu</div>
+        <div class="card-sub" style="margin-top:0.15rem">Apr 8 at 10:30 AM – Apr 11 at 10:30 AM · Booked by Kelly</div>
+      </div>
+    </div>
+    <div class="card-details">
+      <div><div class="detail-label">Island</div><div class="detail-val">Oahu</div></div>
+      <div><div class="detail-label">Pick-up</div><div class="detail-val">Wed, Apr 8 · 10:30 AM</div></div>
+      <div><div class="detail-label">Drop-off</div><div class="detail-val">Sat, Apr 11 · 10:30 AM</div></div>
+      <div><div class="detail-label">Duration</div><div class="detail-val">3 days</div></div>
+    </div>
+  </div>
+
+  <!-- OUTBOUND FLIGHTS -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--primary)"></div>
+    <span class="section-label">Outbound — Friday, Apr 3</span>
+  </div>
+
+  <div class="flight-card">
+    <div class="flight-header">
+      <span class="flight-pill flight-pill-dl">DL 316</span>
+      <span class="flight-date">Friday, Apr 3, 2026</span>
+    </div>
+    <div class="flight-route">
+      <div class="airport"><div class="airport-code">SLC</div><div class="airport-time">12:00 PM</div><div class="airport-name">Salt Lake City</div></div>
+      <div class="flight-mid"><div class="flight-track"></div></div>
+      <div class="airport"><div class="airport-code">HNL</div><div class="airport-time">3:01 PM</div><div class="airport-name">Honolulu</div></div>
+    </div>
+  </div>
+  <div class="layover">⏱ 1 hr 45 min layover in Honolulu (HNL)</div>
+  <div class="flight-card" style="margin-top:0.75rem">
+    <div class="flight-header">
+      <span class="flight-pill flight-pill-dl">DL 6803</span>
+      <span class="flight-date">Friday, Apr 3, 2026</span>
+    </div>
+    <div class="flight-route">
+      <div class="airport"><div class="airport-code">HNL</div><div class="airport-time">4:46 PM</div><div class="airport-name">Honolulu</div></div>
+      <div class="flight-mid"><div class="flight-track"></div></div>
+      <div class="airport"><div class="airport-code">LIH</div><div class="airport-time">5:34 PM</div><div class="airport-name">Lihue, Kauai</div></div>
+    </div>
+  </div>
+
+  <!-- INTER-ISLAND -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--purple)"></div>
+    <span class="section-label">Inter-island — Wednesday, Apr 8</span>
+  </div>
+  <div class="flight-card">
+    <div class="flight-header">
+      <span class="flight-pill flight-pill-wn">WN 2980</span>
+      <span class="flight-date">Wednesday, Apr 8, 2026</span>
+    </div>
+    <div class="flight-route">
+      <div class="airport"><div class="airport-code">LIH</div><div class="airport-time">11:50 AM</div><div class="airport-name">Lihue</div></div>
+      <div class="flight-mid">
+        <div class="flight-track"></div>
+        <div class="flight-dur">45 min · Southwest · Economy (V)</div>
+      </div>
+      <div class="airport"><div class="airport-code">HNL</div><div class="airport-time">12:35 PM</div><div class="airport-name">Terminal 2</div></div>
+    </div>
+  </div>
+
+  <!-- RETURN -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--coral)"></div>
+    <span class="section-label">Return — Saturday, Apr 11</span>
+  </div>
+  <div class="flight-card">
+    <div class="flight-header">
+      <span class="flight-pill flight-pill-dl">DL 534</span>
+      <span class="flight-date">Saturday, Apr 11, 2026</span>
+    </div>
+    <div class="flight-route">
+      <div class="airport"><div class="airport-code">HNL</div><div class="airport-time">12:25 PM</div><div class="airport-name">Honolulu</div></div>
+      <div class="flight-mid"><div class="flight-track"></div></div>
+      <div class="airport"><div class="airport-code">SLC</div><div class="airport-time">10:25 PM</div><div class="airport-name">Salt Lake City</div></div>
+    </div>
+  </div>
+
+  <!-- KAUAI DAYS -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--teal)"></div>
+    <span class="section-label">Kauai — Apr 3 to Apr 8</span>
+  </div>
+  <div class="island-banner" style="background:var(--teal-light);border:1px solid var(--teal-border)">
+    <span style="font-size:1.1rem">🌿</span>
+    <span class="island-name" style="color:#0f766e">Kauai · The Garden Isle <span class="island-detail">Outrigger Plantation Hotel · 5 nights · Thrifty Standard</span></span>
+  </div>
+  <div id="kauai-days"></div>
+
+  <!-- OAHU DAYS -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--amber)"></div>
+    <span class="section-label">Oahu — Apr 8 to Apr 11</span>
+  </div>
+  <div class="island-banner" style="background:var(--amber-light);border:1px solid var(--amber-border)">
+    <span style="font-size:1.1rem">🏄</span>
+    <span class="island-name" style="color:#92400e">Oahu · Waikiki <span class="island-detail">Outrigger Waikiki Paradise · 3 nights · Alamo Fullsize</span></span>
+  </div>
+  <div id="oahu-days"></div>
+
+  <!-- TIPS -->
+  <div class="section-header">
+    <div class="section-dot" style="background:var(--amber)"></div>
+    <span class="section-label">Trip Tips</span>
+  </div>
+  <div class="tip tip-teal">
+    <div class="tip-title">🚗 Car Rental Handoff</div>
+    <div class="tip-text">Thrifty drop-off Apr 8 is at 9:00 AM — return the car first, then check bags for the 11:50 AM flight. Alamo drops off Apr 11 at 10:30 AM — return it on the way to the airport for your noon departure.</div>
+  </div>
+  <div class="tip tip-teal">
+    <div class="tip-title">⚓ Pearl Harbor Tips (Thu, Apr 9)</div>
+    <div class="tip-text">Kids 4 and under are free. Reserve USS Arizona Memorial tickets at recreation.gov — they sell out weeks in advance. No bags allowed inside; use paid lockers. Plan 3–4 hrs total on site.</div>
+  </div>
+  <div class="tip tip-teal">
+    <div class="tip-title">🚣 Mountain Tubing (Sun, Apr 5)</div>
+    <div class="tip-text">No flip flops — secured water shoes only. Reef-safe sunscreen required. Headlamps and gloves are provided. Lunch is included ~2 hrs into the tour. Min age 5, min height 43 inches.</div>
+  </div>
+
+  <footer>
+    <strong>Hawaii Trip 2026</strong> · Family Itinerary · GACOGS<br>
+    <span style="margin-top:0.35rem;display:block">Apr 3 – Apr 11 · Kauai & Oahu</span>
+  </footer>
+
+</div>
+
+<script>
+const tubingDay = {
+  date:"Sun, Apr 5", label:"Mountain Tubing Float", sub:"Kauai Backcountry Adventures · 11:00 AM",
+  color:"#0d9488", confirmed:true, island:"Kauai", useTimeline:true,
+  timeline:[
+    {time:"10:30 AM",dot:"#9ca3af",line:"#e5e7eb",title:"Depart hotel",detail:"~20 min drive south to Lihue · 3-4131 Kuhio Hwy",transit:true},
+    {time:"11:00 AM",dot:"#0d9488",line:"#99f6e4",title:"Tour begins · Kauai Backcountry Adventures",detail:"4WD vehicle into 17,000 acres of former plantation lands · views of Mt. Wai'ale'ale"},
+    {time:"11:15 AM",dot:"#0d9488",line:"#99f6e4",title:"Float begins — 2.5 miles of open canals",detail:"Headlamps on · through 5 hand-dug lava tunnels dating to 1870 · gently flowing water"},
+    {time:"~1:00 PM",dot:"#d97706",line:"#fcd34d",title:"🍽 Lunch + natural swimming hole",detail:"Enchanted picnic area · lunch & cold water included · cool dip in swimming hole"},
+    {time:"2:00 PM",dot:"#0d9488",line:"#e5e7eb",title:"Tour ends",detail:"3-hour tour wraps up · change into dry clothes"},
+    {time:"~2:20 PM",dot:"#9ca3af",line:"none",title:"Back at Outrigger Plantation",detail:"~20 min drive north · afternoon is yours!",transit:true},
+  ],
+  packBring:["Secured water shoes (no flip flops)","Swimsuit or clothes to get wet","Towel + dry change of clothes","Reef-safe sunscreen","Hat (recommended)","Bug repellent"],
+  packProvided:["Helmet","Headlamp + gloves","Tube","Lunch + cold water","Hand sanitizer"],
+};
+
+const kauaiDays = [
+  {
+    date:"Fri, Apr 3", label:"Arrival in Kauai", sub:"Land LIH ~5:34 PM · Pick up Thrifty · Check in",
+    color:"#0d9488", island:"Kauai",
+    activities:[
+      {icon:"✈️",title:"Arrive Lihue (LIH) · 5:34 PM",detail:"Pick up Thrifty Standard · head to Outrigger Plantation Hotel"},
+      {icon:"🌅",title:"Catch the sunset",detail:"Poipu Beach — great first Hawaiian sunset, calm and easy with kids",kids:true},
+      {icon:"🍽",title:"Dinner: Kauai Beer Company",detail:"Casual, kid-friendly spot with burgers, pizzas, local brews · relaxed vibe after a long travel day · Lihue",kids:true,price:"$$",isDinner:true},
+    ]
+  },
+  {
+    date:"Sat, Apr 4", label:"South Shore", sub:"Poipu · Spouting Horn · Koloa Town",
+    color:"#0d9488", island:"Kauai",
+    activities:[
+      {icon:"🐢",title:"Poipu Beach Park",detail:"One of the best family beaches on Kauai · calm protected waters · monk seals and sea turtles often spotted on the sand",kids:true},
+      {icon:"💦",title:"Spouting Horn Blowhole",detail:"15-min stop kids will love — waves shoot a geyser through a lava tube · free · roadside pull-off",kids:true},
+      {icon:"🏘",title:"Old Koloa Town",detail:"Charming historic sugar town · grab shave ice at Koloa Mill Ice Cream & Coffee · browse local shops"},
+      {icon:"🍽",title:"Dinner: Poke Shack",detail:"Fresh poke bowls, grilled fish plates · casual counter service, very affordable · Koloa",kids:true,price:"$",isDinner:true},
+    ]
+  },
+  tubingDay,
+  {
+    date:"Mon, Apr 6", label:"Waimea Canyon", sub:"\"Grand Canyon of the Pacific\"",
+    color:"#0d9488", island:"Kauai",
+    activities:[
+      {icon:"🏔",title:"Waimea Canyon State Park",detail:"Drive the overlooks at mile markers 10–14 — jaw-dropping views, no strenuous hiking required · free entry"},
+      {icon:"🥾",title:"Iliau Nature Loop",detail:"Short 0.1-mi family loop — or Cliff Trail to Waipo'o Falls (5 mi) for older adventurers",kids:true},
+      {icon:"🌺",title:"Koke'e State Park",detail:"Just up the road · Koke'e Museum is a great nature intro for kids · enjoy the cool mountain air",kids:true},
+      {icon:"🍽",title:"Dinner: Shrimp Station",detail:"Iconic roadside shrimp shack in Waimea · garlic shrimp, fish tacos · outdoor picnic tables, super casual",kids:true,price:"$",isDinner:true},
+    ]
+  },
+  {
+    date:"Tue, Apr 7", label:"North Shore", sub:"Hanalei · Ke'e Beach · Na Pali views",
+    color:"#0d9488", island:"Kauai",
+    activities:[
+      {icon:"🏖",title:"Ke'e Beach",detail:"Stunning beach at the end of the road · calm lagoon great for snorkeling · arrive early for parking · free"},
+      {icon:"🌊",title:"Hanalei Bay",detail:"One of the world's most beautiful bays · wide sandy beach, great for boogie boarding",kids:true},
+      {icon:"🍦",title:"Shave Ice in Hanalei Town",detail:"Shave Ice Paradise on the main drag · li hing mui and tropical flavors · kids' highlight of the day",kids:true,price:"$"},
+      {icon:"🍽",title:"Dinner: Hanalei Taro & Juice",detail:"Local fave · taro burgers, fresh juices, plate lunches · casual outdoor spot, affordable",kids:true,price:"$",isDinner:true},
+    ]
+  },
+  {
+    date:"Wed, Apr 8", label:"Travel Day — Oahu", sub:"Drop off Thrifty by 9 AM · WN 2980 at 11:50 AM",
+    color:"#7c3aed", island:"Kauai",
+    activities:[
+      {icon:"🚗",title:"Return Thrifty rental · LIH · by 9:00 AM",detail:"Drop car before heading to check-in · small airport, easy process"},
+      {icon:"✈️",title:"WN 2980 · LIH → HNL · 11:50 AM",detail:"Arrives 12:35 PM · Terminal 2 · 45 min · Southwest Economy (V)"},
+      {icon:"🚙",title:"Pick up Alamo Fullsize · HNL",detail:"Plenty of room for the whole family and luggage"},
+      {icon:"🏨",title:"Check in: Outrigger Waikiki Paradise",detail:"Waikiki, Oahu · 4 nights · steps from the beach"},
+      {icon:"🍽",title:"Dinner: Ono Seafood",detail:"Legendary fresh poke and plate lunches · local institution · cash-friendly",kids:true,price:"$",isDinner:true},
+    ]
+  },
+];
+
+const oahuDays = [
+  {
+    date:"Thu, Apr 9", label:"Pearl Harbor & Boat Tour", sub:"USS Arizona Memorial — booked!",
+    color:"#d97706", confirmed:true, island:"Oahu",
+    activities:[
+      {icon:"⚓",title:"Pearl Harbor National Memorial",detail:"Arrive early · tickets at recreation.gov · no bags allowed · kids 4 and under free",highlight:true},
+      {icon:"⛵",title:"USS Arizona Boat Tour",detail:"Short boat ride to the memorial — plan 3–4 hrs total on site"},
+      {icon:"🎖",title:"Pacific Aviation Museum",detail:"Highly recommended with kids! Interactive exhibits, real WWII planes, flight simulators",kids:true},
+      {icon:"🍽",title:"Dinner: Helena's Hawaiian Food",detail:"James Beard Award-winning local institution · kalua pig, laulau, poi, haupia · authentic Hawaiian comfort food, very reasonable prices",kids:true,price:"$$",isDinner:true},
+    ]
+  },
+  {
+    date:"Fri, Apr 10", label:"Diamond Head & Waikiki Beach", sub:"Morning hike + beach afternoon",
+    color:"#d97706", island:"Oahu",
+    activities:[
+      {icon:"🌋",title:"Diamond Head Crater Hike",detail:"Go early (7–8 AM) · 1.6 mi round trip with tunnel and stairs · great for both kids · $5/person · panoramic views at the summit",kids:true},
+      {icon:"🏄",title:"Waikiki Beach afternoon",detail:"Boogie board rentals ($10–15/day) or group surf lesson right on the beach — gentle break is perfect for first-timers",kids:true},
+      {icon:"🍦",title:"Shave Ice: Waiola Bakery",detail:"Old-school local favorite · bigger portions, better prices than tourist spots · try with ice cream on the bottom",kids:true,price:"$"},
+      {icon:"🍽",title:"Dinner: Rainbow Drive-In",detail:"Classic Honolulu plate lunch since 1961 · mixed plates, macaroni salad · beloved local spot, very affordable",kids:true,price:"$",isDinner:true},
+    ]
+  },
+  {
+    date:"Sat, Apr 11", label:"Departure Day", sub:"DL 534 departs HNL 12:25 PM",
+    color:"#e85d30", island:"Oahu",
+    activities:[
+      {icon:"🚙",title:"Return Alamo Fullsize · by 10:30 AM",detail:"Drop off at HNL on the way to your flight"},
+      {icon:"🧳",title:"Check out · Outrigger Waikiki Paradise",detail:"Head to HNL with plenty of time to spare"},
+      {icon:"✈️",title:"DL 534 · HNL → SLC",detail:"Departs 12:25 PM · Arrives SLC 10:25 PM · Aloha! 🌺"},
+    ]
+  },
+];
+
+function badge(cls, text) {
+  return `<span class="badge ${cls}">${text}</span>`;
+}
+
+function buildActivity(a, isOahu) {
+  if (a.isDinner) {
+    const priceBadge = a.price ? badge('badge-price', a.price) : '';
+    const kidsBadge = a.kids ? badge('badge-kids', '👨‍👩‍👧‍👦 kids') : '';
+    return `<div class="dinner-box">
+      <div class="dinner-label">🍽 Dinner suggestion</div>
+      <div class="dinner-name">${a.title.replace('Dinner: ','')}${kidsBadge}${priceBadge}</div>
+      <div class="dinner-detail">${a.detail}</div>
+    </div>`;
+  }
+  const confirmedBadge = a.highlight ? badge(isOahu ? 'badge-confirmed-amber' : 'badge-confirmed', '✓ Confirmed') : '';
+  const kidsBadge = a.kids ? badge('badge-kids', '👨‍👩‍👧‍👦 kids') : '';
+  const priceBadge = a.price ? badge('badge-price', a.price) : '';
+  return `<div class="activity">
+    <div class="act-icon">${a.icon}</div>
+    <div>
+      <div class="act-title">${a.title}${confirmedBadge}${kidsBadge}${priceBadge}</div>
+      ${a.detail ? `<div class="act-detail">${a.detail}</div>` : ''}
+    </div>
+  </div>`;
+}
+
+function buildTimeline(day) {
+  const rows = day.timeline.map((item, i) => {
+    const isLast = i === day.timeline.length - 1;
+    return `<div class="tl-row" style="${item.transit ? 'opacity:0.72' : ''}">
+      <div class="tl-time">${item.time}</div>
+      <div class="tl-spine">
+        <div class="tl-dot" style="background:${item.dot}"></div>
+        ${!isLast && item.line !== 'none' ? `<div class="tl-line" style="background:${item.line}"></div>` : ''}
+      </div>
+      <div class="tl-content" style="padding-bottom:${isLast ? '0' : '0.9rem'}">
+        <div class="tl-title">${item.title}</div>
+        <div class="tl-detail">${item.detail}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const bringHTML = day.packBring.map(p => `<div class="pack-item"><span class="pack-check">✓</span>${p}</div>`).join('');
+  const providedHTML = day.packProvided.map(p => `<div class="pack-item"><span class="pack-check" style="color:var(--teal)">✓</span>${p}</div>`).join('');
+
+  return `${rows}
+    <div style="border-top:1px solid var(--border);margin-top:0.75rem;padding-top:0.75rem">
+      <div class="pack-label">What to bring</div>
+      <div class="pack-grid">${bringHTML}</div>
+      <div class="pack-label" style="color:var(--teal)">Provided by Kauai Backcountry</div>
+      <div class="pack-grid">${providedHTML}</div>
+    </div>`;
+}
+
+function buildDays(days, containerId, defaultOpen = []) {
+  const container = document.getElementById(containerId);
+  const isOahu = containerId.includes('oahu');
+  days.forEach((day, i) => {
+    const isOpen = defaultOpen.includes(i);
+    const dayNum = isOahu ? i + 7 : i + 1;
+
+    const bookedBadge = day.confirmed
+      ? badge(isOahu ? 'badge-confirmed-amber' : 'badge-confirmed', '✓ Booked')
+      : '';
+
+    let bodyContent = '';
+    if (day.useTimeline) {
+      bodyContent = buildTimeline(day);
+    } else if (day.activities && day.activities.length) {
+      bodyContent = day.activities.map(a => buildActivity(a, isOahu)).join('');
+    }
+
+    const card = document.createElement('div');
+    card.className = 'day-card';
+    card.innerHTML = `
+      <div class="day-header" onclick="toggle('body-${containerId}-${i}','chev-${containerId}-${i}')">
+        <div class="day-num" style="background:${day.color}">${dayNum}</div>
+        <div style="flex:1">
+          <div class="day-title">${day.label}${bookedBadge}</div>
+          <div class="day-sub">${day.date} · ${day.sub}</div>
+        </div>
+        <div class="day-chevron ${isOpen ? 'open' : ''}" id="chev-${containerId}-${i}">▼</div>
+      </div>
+      <div class="day-body" id="body-${containerId}-${i}" style="display:${isOpen ? 'block' : 'none'}">${bodyContent}</div>`;
+    container.appendChild(card);
+  });
+}
+
+function toggle(bodyId, chevId) {
+  const body = document.getElementById(bodyId);
+  const chev = document.getElementById(chevId);
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  chev.classList.toggle('open', !open);
+}
+
+buildDays(kauaiDays, 'kauai-days', [0,1,2,3,4,5]);
+buildDays(oahuDays, 'oahu-days', [0,1,2]);
+</script>
+</body>
+</html>
